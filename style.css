@@ -1,0 +1,348 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    /** Flex Properties */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /** text properties */
+    font-family: 'Poppins', sans-serif;
+    /** styling properties */
+    background-color: hsl(0, 0%, 94%);
+}
+
+#container {
+    /** control properties */
+    height: 530px;
+    width: 680px;
+    /** styling properties */
+    border: 0;
+    border-bottom-right-radius: 180px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: white;
+}
+
+/*! Upper Section */
+
+#upperSEC {
+    /** control */
+    height: 35%;
+    width: 100%;
+    /** styling */
+}
+
+input {
+    /** control properties */
+    width: 105px;
+    height: 50px;
+    display: block;
+    margin-top: 4px;
+}
+
+
+#inputSEC {
+    /** Flex Properties */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    /** control properties */
+    width: 100%;
+}
+
+#inputSEC label:nth-of-type(1) {
+    margin-left: 48px;
+}
+
+#inputSEC label:nth-of-type(2),
+label:nth-of-type(3) {
+    margin-left: 15px;
+}
+
+
+#inputSEC label {
+    /** control properties */
+    margin-top: 30px;
+    /** styling properties */
+    color: hsl(0, 1%, 55%);
+    /** text properties */
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+#inputSEC label input {
+    /** control properties */
+    box-sizing: border-box;
+    /** styling properties */
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 10px;
+    outline: none;
+    /** text properties */
+    font-size: 28px;
+}
+
+#inputSEC label input::placeholder {
+    /** control properties */
+    position: relative;
+    left: 10px;
+    /** text properties */
+    font-size: 30px;
+    text-align: start;
+    /** styling properties */
+    color: hsl(0, 1%, 50%);
+}
+
+#inputSEC label input:focus {
+    border-color: hsl(259, 68%, 56%);
+}
+
+
+#upperSEC hr {
+    /** control properties */
+    width: 520px;
+    margin-left: 50px;
+    margin-bottom: 16px;
+    display: inline-block;
+    /** styling properties */
+    background-color: hsl(0, 0%, 86%);
+    border: 0;
+    height: 1.5px;
+}
+
+#upperSEC button {
+    /** control properties */
+    margin-top: 25px;
+    transform: scaleY(1.6) scaleX(1.4);
+    display: inline;
+    /** styling properties */
+    background-color: hsl(259, 100%, 65%);
+    border: 0;
+    border-radius: 100%;
+}
+
+#upperSEC button:hover {
+    /** styling properties */
+    background-color: black;
+}
+
+/*! Lower Section */
+
+#lowerSEC {
+    /** control properties */
+    height: 48%;
+    width: 100%;
+    margin-top: 40px;
+    /** styling properties */
+}
+
+#lowerSEC div {
+    width: 100%;
+    height: 33%;
+}
+
+#lowerSEC div:nth-of-type(1) span {
+    font-size: 82px;
+}
+
+#lowerSEC div:nth-of-type(2) span {
+    font-size: 82px;
+}
+
+#lowerSEC div:nth-of-type(3) span {
+    font-size: 82px;
+}
+
+#lowerSEC div:nth-of-type(1) span:nth-of-type(1) {
+    margin-left: 44px;
+    font-weight: 700;
+    /** styling properties */
+    color: hsl(259, 100%, 65%);
+}
+
+#lowerSEC div:nth-of-type(2) span:nth-of-type(1) {
+    margin-left: 44px;
+    font-weight: 700;
+    /** styling properties */
+    color: hsl(259, 100%, 65%);
+}
+
+#lowerSEC div:nth-of-type(3) span:nth-of-type(1) {
+    margin-left: 44px;
+    font-weight: 700;
+    /** styling properties */
+    color: hsl(259, 100%, 65%);
+}
+
+#lowerSEC div:nth-of-type(1) span:nth-of-type(2) {
+    margin-left: 20px;
+    font-weight: 700;
+    /** styling properties */
+    color: hsl(259, 100%, 65%);
+}
+
+#lowerSEC div:nth-of-type(2) span:nth-of-type(2) {
+    margin-left: 20px;
+    font-weight: 700;
+    /** styling properties */
+    color: hsl(259, 100%, 65%);
+}
+
+#lowerSEC div:nth-of-type(3) span:nth-of-type(2) {
+    margin-left: 20px;
+    font-weight: 700;
+    /** styling properties */
+    color: hsl(259, 100%, 65%);
+}
+
+
+#lowerSEC div:nth-of-type(1) span:nth-of-type(3) {
+    margin-left: 25px;
+    font-weight: 900;
+}
+
+#lowerSEC div:nth-of-type(2) span:nth-of-type(3) {
+    margin-left: 25px;
+    font-weight: 900;
+}
+
+#lowerSEC div:nth-of-type(3) span:nth-of-type(3) {
+    margin-left: 25px;
+    font-weight: 900;
+}
+
+#attrb {
+    /** control properties */
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 50px;
+}
+
+
+@media (max-width:686px) {
+    #inputSEC {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #container {
+        /** control properties */
+        width: 580px;
+    }
+
+    #inputSEC label:nth-of-type(1) {
+        margin-left: 1px;
+    }
+
+    #upperSEC hr {
+        /** control properties */
+        width: 480px;
+        margin-left: 52px;
+        display: inline-block;
+        z-index: 0;
+        position: relative;
+        top: 70px;
+    }
+
+    #inputSEC label:nth-of-type(2),
+    label:nth-of-type(3) {
+        margin-left: 8px;
+    }
+
+    #upperSEC button {
+        /** control properties */
+        margin-left: 260px;
+    }
+
+    #attrb {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+@media (max-width:580px) {
+    #inputSEC {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #container {
+        /** control properties */
+        width: 480px;
+    }
+
+    #inputSEC label:nth-of-type(1) {
+        margin-left: 1px;
+    }
+
+    #upperSEC hr {
+        /** control properties */
+        width: 370px;
+        margin-left: 52px;
+    }
+
+    #upperSEC button {
+        /** control properties */
+        margin-left: 210px;
+    }
+
+    #lowerSEC div:nth-of-type(1) span {
+        font-size: 70px;
+    }
+
+    #lowerSEC div:nth-of-type(2) span {
+        font-size: 70px;
+    }
+
+    #lowerSEC div:nth-of-type(3) span {
+        font-size: 70px;
+    }
+
+}
+
+
+@media (max-width:479px) {
+    #inputSEC {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #container {
+        /** control properties */
+        width: 370px;
+    }
+
+    #upperSEC hr {
+        /** control properties */
+        width: 255px;
+        margin-left: 52px;
+    }
+
+    #upperSEC button {
+        /** control properties */
+        margin-left: 165px;
+    }
+
+    #lowerSEC div:nth-of-type(1) span {
+        font-size: 50px;
+    }
+
+    #lowerSEC div:nth-of-type(2) span {
+        font-size: 50px;
+    }
+
+    #lowerSEC div:nth-of-type(3) span {
+        font-size: 50px;
+    }
+
+}

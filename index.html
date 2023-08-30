@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,800;1,400;1,700;1,600&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <title>Age calculator app</title>
+</head>
+
+<body>
+  <div id="container">
+    <div id="upperSEC">
+      <form action="/nowhere">
+        <section id="inputSEC">
+          <!-- Day Section -->
+          <label>
+            <span>Day</span>
+            <input id="day_i" name="day_i" type="text" placeholder="DD" />
+            <span></span>
+          </label>
+          <!-- Month Section -->
+          <label>
+            <span>Month</span>
+            <input id="month_i" name="month_i" type="text" placeholder="MM" />
+            <span></span>
+          </label>
+          <!-- Year Section -->
+          <label>
+            <span>Year</span>
+            <input id="year_i" name="year_i" type="text" placeholder="YYYY" />
+            <span></span>
+          </label>
+        </section>
+        <hr>
+        <button type="submit">
+          <svg xmlns="http://www.w3.org/2000/svg" width="42" height="40" viewBox="0 0 46 44">
+            <g fill="none" stroke="#FFF" stroke-width="2">
+              <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+                transform="scale(0.6) translate(15, 18.5)" />
+            </g>
+          </svg>
+        </button>
+      </form>
+    </div>
+    <div id="lowerSEC">
+      <div><span id="y1">-</span><span id="y2">-</span><span><i>years</i></span></div>
+      <div><span id="m1">-</span><span id="m2">-</span><span><i>months</i></span></div>
+      <div><span id="d1">-</span><span id="d2">-</span><span><i>days</i></span></div>
+    </div>
+  </div>
+  <div id="attrb">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+    Coded by <a href="#">Abdi Mohamed Nasrellah</a>
+  </div>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
